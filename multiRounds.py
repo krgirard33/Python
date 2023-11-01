@@ -1,21 +1,21 @@
 import time, sys
 
-def runSession():
+def run_session():
     session = 0
-    sessionsTot = 5
-    sesLen = 1
-    restLen = 1
+    sessions_tot = 5
+    ses_len = 30
+    rest_len = 10
     
-    while session < sessionsTot:
+    while session < sessions_tot:
         session = session+1
         print('Go!')
-        time.sleep(sesLen)
-        if session < sessionsTot:
+        time.sleep(ses_len)
+        if session < sessions_tot:
           print('Stop round ' + str(session) + '!')
-          time.sleep(1)
+          time.sleep(rest_len)
         else:
           continue
   
     print('All done! Way to go!')
 
-runSession()
+run_session()
