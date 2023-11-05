@@ -15,7 +15,7 @@ def collatz(number):
     print(result)
     sys.exit()
   
-def getInput():
+def get_input():
   try:
     num = int(input())
     if num == 1:
@@ -25,8 +25,8 @@ def getInput():
       collatz(num)
   except ValueError:
     print('Integers only, please. Enter an integer')
-    getInput()
+    get_input()
     
 print('Enter a number')
-getInput()
+get_input()
   
